@@ -1,0 +1,8 @@
+fun main (arg: Array<String>) {
+val alfavit = listOf("a","b","c","d")
+val newalfavit = mutableListOf<String>()
+        for (i in alfavit){
+            newalfavit.add(i)
+        }
+        println(newalfavit) 
+}
