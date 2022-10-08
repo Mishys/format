@@ -1,0 +1,26 @@
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+    override fun onResume() {
+        super.onResume()
+
+        val Poems = mutableListOf<String>()
+
+        Poems.add("Мороз и солнце; день чудесный!,")
+        Poems.add("Еще ты дремлешь, друг прелестный —")
+        Poems.add("Пора, красавица, проснись:")
+        Poems.add("Открой сомкнуты негой взоры")
+        Poems.add("Навстречу северной Авроры,")
+        Poems.add("Звездою севера явись!")
+
+        for (str in Poems) {
+            Log.i("Poems", str)
+        }
+    }
+}
